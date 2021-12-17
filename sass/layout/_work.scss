@@ -27,16 +27,14 @@
     height: 294px;
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
+    position: relative;
+    display: block;
+    width: 370px;
 }
 .section-work-point:nth-child(3n) {
     margin-right: 0;
 }
 
-.section-work-point {
-    position: relative;
-    display: block;
-    width: 370px;
-}
 .section-work-title-img {
     position: absolute;
     padding: 27px 0;
