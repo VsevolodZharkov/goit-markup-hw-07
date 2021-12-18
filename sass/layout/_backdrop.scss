@@ -1,3 +1,4 @@
+/*    всплывающие окно backdrop  */
 
 .backdrop {
     position: fixed;
@@ -34,9 +35,15 @@
     vertical-align: middle;
     &:hover,
     &:focus {
-        fill: var(--accent-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }   
+    fill: var(--accent-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 .modal-svg {
     height: 18px;
@@ -82,19 +89,24 @@
     &:focus + .input-icon {
         fill: var(--accent-color);
     }
+    
 }
 .modal-wrap {
     position: relative;
 }
+
 .input-icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+}
+.input-icon {
     fill: var(--text-color-zag);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-label {
     font-weight: 400;
     font-size: 12px;
@@ -130,7 +142,6 @@
     color: rgba(117, 117, 117, 0.5);
     resize: none;
 }
-
 .check-text {
     font-weight: 400;
     font-size: 14px;
@@ -140,28 +151,29 @@
     display: flex;
     align-items: center;
     position: relative;
-    &::before {
-        content: "";
-        width: 16px;
-        height: 15px;
-        border: 2px solid var(--text-color-zag);
-        border-radius: 2px;
-        margin-right: 7px;
-        background-image: url(../images/vector.svg);
-        background-position: center;
-        background-size: 15px;
-        background-repeat: no-repeat;
-    }
-    &:checked + &::before {
-        background-color: var(--accent-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        border: none;
-    }
 }
 .modal-text-provisions {
     color: var(--accent-color);
     margin-left: 4px;
 }
+.check-text::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--text-color-zag);
+    border-radius: 2px;
+    margin-right: 7px;
+    background-image: url(../images/vector.svg);
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+.modal-check:checked + .check-text::before {
+    background-color: var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+}
+
 .btnmodal {
     text-align: center;
 }
@@ -180,9 +192,8 @@
     border:none;
     &:hover,
     &:focus {
-        background-color: var(--accent-color);
-        color: var(--background-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-

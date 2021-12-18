@@ -874,6 +874,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*    всплывающие окно backdrop  */
 .backdrop {
   position: fixed;
   top: 0;
@@ -914,6 +915,12 @@ img {
 .modal-btn:hover, .modal-btn:focus {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-svg {
@@ -977,6 +984,9 @@ img {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+.input-icon {
   fill: var(--text-color-zag);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1031,6 +1041,11 @@ img {
   position: relative;
 }
 
+.modal-text-provisions {
+  color: var(--accent-color);
+  margin-left: 4px;
+}
+
 .check-text::before {
   content: "";
   width: 16px;
@@ -1044,15 +1059,10 @@ img {
   background-repeat: no-repeat;
 }
 
-.check-text:checked + .check-text::before {
+.modal-check:checked + .check-text::before {
   background-color: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
-}
-
-.modal-text-provisions {
-  color: var(--accent-color);
-  margin-left: 4px;
 }
 
 .btnmodal {
