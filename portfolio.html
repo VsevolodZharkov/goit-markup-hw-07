@@ -13,28 +13,34 @@
     <header class="header">
         <div class="header-containers">
             <nav class="header-nav">
-                <a href="index.html" class="header-link-logo">
-                    <span class="header-span">Web</span>Studio
+                <a  class="header-nav__link-logo" href="index.html">
+                    <span class="header-nav__span">Web</span>Studio
                 </a>
-                <ul class="header-site-nav">
-                    <li class="header-point"><a href="index.html" class="header-link">Студия</a></li>
-                    <li class="header-point"><a href="./portfolio.html" class="header-link acctive current">Портфолио</a></li>
-                    <li class="header-point"><a href="" class="header-link">Контакты</a></li>
+                <ul class="site-nav">
+                    <li class="site-nav__point nav">
+                        <a href="index.html" class="site-nav__link">Студия</a>
+                    </li>
+                    <li class="site-nav__point nav">
+                        <a href="./portfolio.html" class="site-nav__link  acctive current">Портфолио</a>
+                    </li>
+                    <li class="site-nav__point nav">
+                        <a href="" class="site-nav__link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
-            <ul class="header-auth">
-                <li class="header-point">
-                    <a href="mailto:info@devstudio.com" class="header-link-contakt">
-                        <svg class="header-acon iconhw">
+            <ul class="auth">
+                <li class="auth__point dot">
+                    <a class="auth__link-contakt" href="mailto:info@devstudio.com">
+                        <svg class="auth__acon iconhw">
                             <use href="./images/icons.svg#icon-envelope-g2">
                             </use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="header-point indent">
-                    <a href="tel:+380961111111" class="header-link-contakt">
-                        <svg class="header-acon iconhwtwo">
+                <li class="auth__point dot indent">
+                    <a class="auth__link-contakt" href="tel:+380961111111">
+                        <svg class="auth__acon iconhwtwo">
                             <use href="./images/icons.svg#icon-smartphone-g2">
                             </use>
                         </svg>
@@ -236,45 +242,45 @@
     <footer class="footer">
         <div class="footer-containers">
             <div class="leftpos">
-                <a href="index.html" class="footer-logo">
-                    <span class="footer-span">Web</span>Studio
+                <a href="index.html" class="leftpos__logo">
+                    <span class="leftpos__span">Web</span>Studio
                 </a>
                 <address >
-                    <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
-                    <a class="footer-link last" href="mailto:info@devstudio.com" >info@devstudio.com</a>
-                    <a class="footer-link" href="tel:+380961111111" >+38 096 111 11 11</a>
+                    <p class="leftpos__text">г. Киев, пр-т Леси Украинки, 26</p>
+                    <a class="leftpos__link last" href="mailto:info@devstudio.com" >info@devstudio.com</a>
+                    <a class="leftpos__link" href="tel:+380961111111" >+38 096 111 11 11</a>
                 </address>
             </div>
             <div class="rightpos">
-                <p class="footer-texr-sociallast">присоединяйтесь</p>
-            <ul class="footers-social-list">
-                <li class="footers-social-item">
-                    <a href="" class="footer-social-link">
-                        <svg class="footer-social-icon" width="20" height="20">
+                <p class="rightpos__texr-sociallast">присоединяйтесь</p>
+            <ul class="rightpossocial__list">
+                <li class="rightpossocial__item">
+                    <a href="" class="rightpossocial__link">
+                        <svg class="rightpossocial__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-icon-instagram-g1">
                             </use>
                         </svg>
                     </a>
                 </li>
-                <li class="footers-social-item">
-                    <a href="" class="footer-social-link">
-                        <svg class="footer-social-icon" width="20" height="20">
+                <li class="rightpossocial__item">
+                    <a href="" class="rightpossocial__link">
+                        <svg class="rightpossocial__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-icon-twitter-g1">
                             </use>
                         </svg>
                     </a>
                 </li>
-                <li class="footers-social-item">
-                    <a href="" class="footer-social-link">
-                        <svg class="master-social-icon" width="20" height="20">
+                <li class="rightpossocial__item">
+                    <a href="" class="rightpossocial__link">
+                        <svg class="rightpossocial__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-icon-facebook-g1">
                             </use>
                         </svg>
                     </a>
                 </li>
-                <li class="footers-social-item">
-                    <a href="" class="footer-social-link">
-                        <svg class="footer-social-icon" width="20" height="20">
+                <li class="rightpossocial__item">
+                    <a href="" class="rightpossocial__link">
+                        <svg class="rightpossocial__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-icon-linkedin-g1">
                             </use>
                         </svg>
@@ -283,24 +289,22 @@
             </ul> 
             </div>
             <div class="footermail">
-                <p class="footermail-text">Подпишитесь на рассылку</p>
-                    <form action="#" class="footermail-form">
-                        <div class="footermail-field">
-                            <label for="user-email" class="footermail-label">
-                            </label>
-                            <div class="footermail-wrap">
+                <p class="footermail__text">Подпишитесь на рассылку</p>
+                    <form action="#" class="mail__form">
+                        <div class="mail__field">
+                            <div class="mail__wrap">
                                 <input
                                     type="email"
-                                    class="footermail-input"
+                                    class="mail__input"
                                     name="user-email"
                                     id="user-email"
                                     placeholder="E-mail"
                                 />
                             </div>
-                            <div class="footermail-btnlist">
-                                <button type="submit" class="footermail-btn">
+                            <div class="cover__btn">
+                                <button type="submit" class="btn__subscribe">
                                     Подписаться
-                                    <svg class="regular-clients-iconss">
+                                    <svg class="btn__iconss">
                                         <use href="./images/icons.svg#icon-icon-telegram">
                                         </use>
                                     </svg>
@@ -311,7 +315,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
 
