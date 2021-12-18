@@ -1,5 +1,18 @@
+.footer {
+    background-color: var(--fon-background-color-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-containers {
+    display: flex;
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.footer-logo {
+//leftpos//
+.leftpos__logo {
     display: block;
     color: var(--background-color);
     font-family: Raleway, sans-serif;
@@ -10,10 +23,10 @@
     text-decoration: none;
     margin-bottom: 20px;
 }
-.footer-span {
+.leftpos__span {
     color: var(--accent-color);
 }
-.footer-text {
+.leftpos__text {
     color: var(--background-color);
     font-weight: 400;
     font-size: 14px;
@@ -22,7 +35,7 @@
     font-style: initial;
     margin-bottom: 9px;
 }
-.footer-link {
+.leftpos__link {
     display: block;
     color:rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -41,20 +54,15 @@
         margin-bottom: 9px;
     }
 }
-.footer {
-    background-color: var(--fon-background-color-footer);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.footer-containers {
-    display: flex;
-    width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.footer-texr-sociallast {
+//rightpo//
+.rightpos {
+    padding-top: 8px;
+    height: 80px;
+    width: 206px;
+    margin-left: 70px;
+}
+.rightpos__texr-sociallast {
     color: var(--background-color);
     font-weight: 700;
     font-size: 14px;
@@ -63,14 +71,14 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.footers-social-list {
+.rightpossocial__list {
     display: flex;
     justify-content: center;
 }
-.footers-social-item + .footers-social-item {
+.rightpossocial__item + .rightpossocial__item {
     margin-left: 10px;
 }
-.footer-social-link {
+.rightpossocial__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +88,7 @@
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-link {
+.rightpossocial__link {
     fill: var(--background-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
@@ -89,18 +97,13 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-.rightpos {
-    padding-top: 8px;
-    height: 80px;
-    width: 206px;
-    margin-left: 70px;
-}
-/*футер меил*/
+
+//футер меил//
 .footermail {
     margin-left: 93px;
     padding-top: 8px;
 }
-.footermail-text {
+.footermail__text {
     color: var(--background-color);
     font-weight: 700;
     font-size: 14px;
@@ -109,11 +112,11 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.footermail-field {
+
+.mail__field {
     display: flex;
 }
-
-.footermail-input {
+.mail__input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -128,7 +131,11 @@
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
 }
-.footermail-btn {
+
+.cover__btn {
+    position: relative;
+}
+.btn__subscribe {
     height: 50px;
     width: 200px;
     padding: 10px 28px;
@@ -146,12 +153,8 @@
     margin-left: 12px;
     border:none;
 }
-.footermail-btnlist {
-    position: relative;
-}
-.regular-clients-iconss {
+.btn__iconss {
     position: absolute;
-    
     top: 50%;
     left: 160px;
     height: 24px;
@@ -159,7 +162,7 @@
     transform: translateY(-50%);
     cursor: pointer;
 }
-.regular-clients-iconss {
+.btn__iconss {
     fill: var(--text-color-zag);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
